@@ -1,8 +1,8 @@
 pub enum DBError {
     DbNotFound,
     DirError,
+    CreateError(String),
     ReadError,
-    CreateError,
     WriteError,
     DbConflict,
     Misc(String),
